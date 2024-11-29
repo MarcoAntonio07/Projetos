@@ -1,0 +1,122 @@
+/*Fonte importada*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Declarações Globais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Paleta de Cores*/
+:root{
+    --cor1: #302F35;
+    --cor2: #B4935E;
+    --cor3: #2D3037;
+    --cor4: antiquewhite
+}
+
+body{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.container-video{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    
+    video{
+        width: 100%;
+    }
+
+    .fundo{
+        background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.616), transparent);
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0px;
+        padding: 10px;
+        display: flex;
+        justify-content: left;
+        border-bottom: 1px solid #B4935E;
+
+        img{
+            width: 20px;
+            height: 20px;
+            
+        }
+       
+    }
+   
+}
+
+.container-descricao{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(0, 0, 0);
+
+    .container-txt{
+        color: white;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 2px;
+        padding: 10px;
+
+        h2{
+            font-weight: 100;
+            font-size: 0.8em;
+        }
+
+        p{
+            font-style: italic;
+            text-align: justify;
+            font-size: 0.8em;
+        }
+    }
+
+    .container-btn{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+
+        #btn1{
+            width: 40%;
+            padding: 15px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            border: 1px solid white;
+            background-image: linear-gradient(to left, #2d3037d1, #b4935eb4);
+            color: white;
+        }
+
+        #btn2{
+            width: 40%;
+            padding: 15px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            border: 1px solid white;
+            background-image: linear-gradient(to left, #2d3037d1, #b4935eb4);
+            color: white;
+        }
+
+    }
+}
+
+button:hover{
+    background-color: #2D3037;
+    color: #B4935E;
+    color: #ffff00;
+}
