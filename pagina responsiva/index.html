@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Playstation Store</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="imagens/logo.png" alt="logo" />
+                <nav>
+                    <ul id="menu-list">
+                        <li class="nav-li"><a class="nav-link">Console</a></li>
+                        <li class="nav-li"><a class="nav-link">Acessórios</a></li>
+                        <li class="nav-li"><a class="nav-link">Controles</a></li>
+                        <li class="nav-li"><a class="nav-link">Outros</a></li>
+                    </ul>
+                </nav>
+                <img class="menu-icon" src="imagens/menu.png" alt="menu" onclick="showMenu()">
+        </div>
+
+        <div class="row">
+            <div class="column-1">
+                <h2>PS5 DualShock</h2>
+                <h3>Wireless Controller for PlayStation</h3>
+                <p>Controle Original</p>
+                <h4>R$ 222,50</h4>
+                <button class="buy">Comprar agora <img src="imagens/arrow.png" alt="seta"></button>
+            </div>
+
+            <div class="column-2">
+                <img class="controller" src="./imagens/controller.png" alt="controle">
+                <div class="color-box"></div>
+                <button class="add-card">
+                    <img src="imagens/add.png" alt="adicionar">
+                </button>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="imagens/fb.png" alt="Facebook">
+            <img src="imagens/ig.png" alt="Instagram">
+            <img src="imagens/tw.png" alt="Twiter">
+        </div>
+    </div>
+  </body>
+
+  <!-- Java Script -->
+  <script>
+    const menulist = document.getElementById("menu-list")
+menulist.style.maxHeight = "0px"
+
+    function showMenu(){
+        if(menulist.style.maxHeight == "0px"){
+            menulist.style.maxHeight = "120px"
+        } else {
+            menulist.style.maxHeight = "0px"
+        }
+    }
+  </script>
+</html>

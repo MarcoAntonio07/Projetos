@@ -1,0 +1,493 @@
+
+/*Paleta de Cores do aplicativo*/
+:root{
+    --cor1: #302F35;
+    --cor2: #B4935E;
+    --cor3: #2D3037;
+    --cor4: antiquewhite
+}
+
+/*Declarações Globais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Corpo do aplicatico*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor3);
+    padding: 3px;
+}
+.container1{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+  
+}
+
+.barra-de-pesquisa{
+    width: 85%;
+    display: inline-block;
+
+    input{
+        width: 100%;
+        height: 45px;
+        border-radius: 15px;
+        border: none;
+        padding: 0px 10px;
+    }
+}
+
+.icone{
+    width: 15%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+
+    img{
+        text-align: center;
+    }
+}
+
+.container2{
+    width: 100%;
+    height: 210px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.container-imagem{
+    background-image: url(../imagens/pexels-roman-odintsov-4551567.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    height: 190px;
+    display: flex;
+    
+
+    .box1{
+        background-image: linear-gradient(to right, #302F35, rgba(48, 48, 48, 0.834),
+        transparent);
+        width: 45%;
+        border-radius: 15px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p{
+            padding-top: 10px;
+            font-size: 1.5em;
+            color: white;
+
+            span{
+                font-weight: bold;
+            }
+        }
+
+        .btn{
+            width: 75%;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: var(--cor2);
+            color: white;
+            border: none;
+
+            
+        }
+    }
+}
+
+.container3{
+    width: 100%;
+    height: 130px;
+    
+
+    .box-txt{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+
+        #txt1{
+            color: white;
+            font-weight: bold;
+        }
+
+        #txt2{
+            color: rgb(156, 156, 156);
+        }
+    }
+
+    .box-btns{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            font-size: 1em;
+            padding: 15px;
+            border-radius: 20px;
+            border: none;
+            background-color: white;
+            border: 2px solid var(--cor2);
+        }
+    }
+}
+
+.box-txt2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    #txt3{
+        color: white;
+        font-weight: bold;
+    }
+
+    #txt4{
+        color: rgb(156, 156, 156);
+    }
+}
+
+.container4{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: auto;
+
+
+    .box1{
+        background-image: url(../imagens/pexels-adnan-karimi-43383275-8525158.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 190px;
+        height: 210px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        
+
+        img{
+            width: 30px;
+        }
+
+        p{
+            font-weight: bold;
+            color: white;
+            margin-bottom: 13px;
+
+            span{
+                font-weight: normal;
+                color: yellow;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.542);
+            }
+        }
+
+    }
+
+    .box2{
+        background-image: url(../imagens/pexels-vince-2147490.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 190px;
+        height: 210px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        
+
+        img{
+            width: 30px;
+        }
+
+        p{
+            font-weight: bold;
+            color: white;
+            margin-bottom: 13px;
+
+            span{
+                font-weight: normal;
+                color: yellow;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.542);
+            }
+        }
+
+    }
+
+    .box3{
+        background-image: url(../imagens/pexels-dominika-polakova-719696518-18319036.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 190px;
+        height: 210px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        
+
+        img{
+            width: 30px;
+        }
+
+        p{
+            font-weight: bold;
+            color: white;
+            margin-bottom: 13px;
+
+            span{
+                font-weight: normal;
+                color: yellow;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.542);
+            }
+        }
+
+    }
+
+    .box4{
+        background-image: url(../imagens/pexels-eduardo-krajan-424982200-15801890.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 190px;
+        height: 210px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        
+
+        img{
+            width: 30px;
+        }
+
+        p{
+            font-weight: bold;
+            color: white;
+            margin-bottom: 13px;
+
+            span{
+                font-weight: normal;
+                color: yellow;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.542);
+            }
+        }
+
+    }
+
+    .box5{
+        background-image: url(../imagens/pexels-nicola-barts-7936948.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 190px;
+        height: 210px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        
+
+        img{
+            width: 30px;
+        }
+
+        p{
+            font-weight: bold;
+            color: white;
+            margin-bottom: 13px;
+
+            span{
+                font-weight: normal;
+                color: yellow;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.542);
+            }
+        }
+
+    }
+
+    .box6{
+        background-image: url(../imagens/pexels-solodsha-8104581.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 190px;
+        height: 210px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        
+
+        img{
+            width: 30px;
+        }
+
+        p{
+            font-weight: bold;
+            color: white;
+            margin-bottom: 13px;
+
+            span{
+                font-weight: normal;
+                color: yellow;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.542);
+            }
+        }
+
+    }
+
+    .box7{
+        background-image: url(../imagens/pexels-solodsha-9010117.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 190px;
+        height: 210px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        
+
+        img{
+            width: 30px;
+        }
+
+        p{
+            font-weight: bold;
+            color: white;
+            margin-bottom: 13px;
+
+            span{
+                font-weight: normal;
+                color: yellow;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.542);
+            }
+        }
+
+    }
+
+    .box8{
+        background-image: url(../imagens/pexels-su-la-pyae-54514809-19471395.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 190px;
+        height: 210px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        
+
+        img{
+            width: 30px;
+        }
+
+        p{
+            font-weight: bold;
+            color: white;
+            margin-bottom: 13px;
+
+            span{
+                font-weight: normal;
+                color: yellow;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.542);
+            }
+        }
+
+    }
+
+    .box9{
+        background-image: url(../imagens/pexels-the-castlebar-3902897-29177401.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 190px;
+        height: 210px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        
+
+        img{
+            width: 30px;
+        }
+
+        p{
+            font-weight: bold;
+            color: white;
+            margin-bottom: 13px;
+
+            span{
+                font-weight: normal;
+                color: yellow;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.542);
+            }
+        }
+
+    }
+    
+}
+
+.container5{
+    background-color: white;
+    width: 410px;
+    height: 80px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+    img{
+        width: 30px;
+    }
+
+    #home{
+        width: 50px
+    }
+}
+
+
+
+
