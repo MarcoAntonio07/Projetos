@@ -19,11 +19,12 @@ body{
     height: 100vh;
     margin: auto;
     background-color: #181C1C;
-    background-image: url(../imagens/pexels-ekrulila-18782522.jpg);
+    background-image: url(../imagens/pexels-fariz-hermawan-1884307-15801340.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .container-nav{
@@ -88,13 +89,17 @@ body{
 
 .box-indereco1{
     background-image: linear-gradient(to left, #181C1C, rgb(70, 69, 69) );
-    width: 330px;
+    width: 240px;
     height: 70px;
     display: flex;
     align-items: center;
     gap: 10px;
     border-radius: 35px;
     padding: 5px;
+    position: absolute;
+    top: 150px;
+    left: 210px;
+    transform: rotate(30deg);
 
     .box{
         background-color: var(--cor2);
@@ -121,13 +126,16 @@ body{
 
 .box-indereco2{
     background-image: linear-gradient(to left, white, rgb(70, 69, 69));
-    width: 330px;
+    width: 240px;
     height: 70px;
     display: flex;
     align-items: center;
     gap: 10px;
     border-radius: 35px;
     padding: 5px;
+    position: absolute;
+    top: 330px;
+    transform: rotate(-25deg);
 
     .box{
         background-color: var(--cor3);
