@@ -1,0 +1,316 @@
+
+/*Paleta de Cores*/
+:root {
+    --cor1: #181C1C;
+    --cor2: #fafe00d4;
+    --cor3: #F0F0F0;
+    --cor4: #414343e7;
+}
+
+/*Declarações Globais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: #181C1C;
+    background-image: url(../imagens/pexels-ekrulila-18782522.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container-nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    .box-input{
+        display: flex;
+        align-items: center;
+        background-color: var(--cor3);
+        width: 260px;
+        height: 70px;
+        border-radius: 25px;
+        gap: 5px;
+        padding: 5px;
+
+        input{
+            width: 80%;
+            height: 30px;
+            border: none;
+            background-color: var(--cor3);
+        }
+    }
+
+
+    .box-icon1{
+        background-color: #F0F0F0;
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        
+    
+        img{
+            width: 25px;
+        }
+    }
+    
+    .box-icon2{
+        background-color: #F0F0F0;
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        
+    
+        img{
+            width: 25px;
+        }
+    }
+}
+
+.box-indereco1{
+    background-image: linear-gradient(to left, #181C1C, rgb(70, 69, 69) );
+    width: 330px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 35px;
+    padding: 5px;
+
+    .box{
+        background-color: var(--cor2);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 20px;
+        }
+    }
+
+    p{
+        color: #F0F0F0;
+
+        span{
+            font-weight: bold;
+        }
+    }
+}
+
+.box-indereco2{
+    background-image: linear-gradient(to left, white, rgb(70, 69, 69));
+    width: 330px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 35px;
+    padding: 5px;
+
+    .box{
+        background-color: var(--cor3);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 20px;
+        }
+    }
+
+    p{
+        color: var(--cor1);
+
+        span{
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+.container-casa{
+    width: 86%;
+    height: 170px;
+    display: flex;
+    background-color: var(--cor3);
+    border-radius: 30px;
+    padding: 5px;
+    gap: 5px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+        .box-img{
+            background-image: url(../imagens/pexels-designecologist-1005058.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 40%;
+            height: 100%;
+            border-radius: 35px;
+            
+        }
+
+        .box-txt{
+            width: 40%;
+            height: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            
+
+            span{
+                color: var(--cor1);
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+
+            p{
+                color: var(--cor4);
+                font-size: 0.8em; 
+            }
+
+            h3{
+                font-size: 2.5em;
+            }
+        }
+    
+        .box-seta{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            border-radius: 25px;
+
+            
+
+            .box-icon{
+                width: 50px;
+                height: 50px;
+                background-color: var(--cor1);
+                border-radius: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            
+                img{
+                    width: 20px;
+                    transform: rotate(-45deg);
+                }
+            }
+
+        }
+        
+}
+
+
+.container-menu{
+    width: 390px;
+    background-color: #676666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 32px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .menu-icon-1{
+        background-color: #F0F0F0;
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .menu-icon-2{
+        background-color: #F0F0F0;
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+
+    .menu-icon-3{
+        background-color: #F0F0F0;
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .menu-icon-4{
+        background-color: #F0F0F0;
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .menu-icon-5{
+        background-color: #F0F0F0;
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    img{
+        width: 25px;
+    }
+
+}
+
+.menu-hover:hover{
+    background-color: var(--cor2);
+    
+}
