@@ -1,0 +1,155 @@
+
+
+/*Paleta de Cores*/
+:root{
+    --cor1: #CCE5E3;
+    --cor2: #FFFFFF;
+    --cor3: #ABABAB;
+    --cor4: #000000;
+   
+}
+
+
+/*Declarações Globais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.nav{
+    
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    h2{
+        font-size: 1.6em;
+    }
+    img{
+        width: 26px;
+    }
+}
+
+.box-perfil{
+    
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    padding: 5px;
+
+    img{
+        width: 38%;
+    }
+
+    p{
+        color: #ABABAB;
+    }
+}
+
+.container{
+    background-color: var(--cor4);
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+
+    .box{
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 510px;
+        border-radius: 0px 0px 45px 45px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: scroll;
+        z-index: 1;
+
+        .boxs{
+            
+            width: 100%;
+            height: 19%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 30px;
+
+            .box-icones{
+                
+                width: 45%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 10px;
+
+                img{
+                    width: 30px;
+                }
+
+                h2{
+                    font-size: 1.2em;
+                }
+
+            }
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+.fundo-azul{
+    background-color: var(--cor1);
+}
+
+.menu{
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    bottom: 1px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    
+    .icones{
+        width: 85px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 25px;
+       
+
+        img{
+            width: 20px;
+            cursor: pointer;
+        }
+
+        p{
+            font-size: 0.8em;
+            color: #ABABAB;
+        }
+    }
+}
