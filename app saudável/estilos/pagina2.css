@@ -6,7 +6,6 @@
     --cor2: #FFFFFF;
     --cor3: #ABABAB;
     --cor4: #000000;
-   
 }
 
 
@@ -20,6 +19,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    margin: auto;
     background-image: url(../imagens/pexels-sozutova-13087350.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -112,7 +112,6 @@ body{
             font-size: 1.5em;
             font-weight: normal;
             color: var(--cor4);
-
         }
 
         .fora{
@@ -132,7 +131,6 @@ body{
 }
 
 section{
-    
     width: 100%;
     height: 190px;
     position: absolute;

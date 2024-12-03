@@ -1,0 +1,129 @@
+
+
+/*Paleta de Cores*/
+:root{
+    --cor1: #CCE5E3;
+    --cor2: #FFFFFF;
+    --cor3: #ABABAB;
+    --cor4: #000000;
+    --cor5: #455559;
+    --cor6: #28403D;
+    --cor7: #182625;
+    --cor8: #ffff00;
+}
+
+
+/*Declarações Globais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 1px;
+    overflow: hidden;   
+}
+
+.box-img-fundo{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+
+    video{
+        width: 100%;
+        height: 100%;
+        object-position: top;
+        object-fit: cover;
+    }
+
+    .fundo{
+        width: 100%;
+        height: 450px;
+        background-image: linear-gradient(to bottom, #182625, #28403D, #455559, transparent);
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border-radius: 25px;
+    }
+}
+
+
+
+.carrosel{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 130px;
+
+    .mensagens{
+        display: flex;
+        align-items: center;
+        min-width: 300px;
+        height: 60px;
+        padding: 5px;
+        position: absolute;
+        left: 100%;
+        animation: carrosel  4s linear infinite;
+        animation-delay: var(--atraso);
+        
+        p{
+            font-size: 1.6em;
+        }
+    }
+}
+
+.carrosel-dois{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 250px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+
+    .mensagens{
+        display: flex;
+        align-items: center;
+        min-width: 300px;
+        height: 60px;
+        padding: 5px;
+        position: absolute;
+        right: 100%;
+        animation: carrosel2  4s linear infinite;
+        animation-delay: var(--atraso);
+        
+        p{
+            font-size: 1.6em;
+            color: #ffff00;
+        }
+    }
+}
+
+@keyframes carrosel {
+    from{
+        left: 100%;
+    }
+    to{
+        left: -100%;
+    }
+}
+
+@keyframes carrosel2 {
+    from{
+        right: 100%;
+    }
+    to{
+        right: -100%;
+    }
+}
+
+
+
