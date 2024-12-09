@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+</head>
+<body>
+    <h1 id="titulo">Treinando Java Script</h1>
+    <div id="quadrado" style="width: 200px; height: 200px; background-color: darkgrey;" onmouseover="mudarCor()" onmouseout="mudarCor2()"></div>
+
+    <button onclick="fundo()">clicar</button>
+
+    <script>
+/*
+        function fundo() {
+            document.querySelector("#titulo").style.color = "red"
+        }
+
+        function mudarCor(){
+            document.querySelector("#quadrado").style.backgroundColor = "red"
+        }
+
+        function mudarCor2() {
+            document.querySelector("#quadrado").style.backgroundColor = "blue"
+        }
+
+
+        let nomes = ["Marco", "Ana", "Julia", "Marcela"]
+
+        console.log(nomes[2])
+        
+*/
+
+        
+
+        let idades = [15, 46, 75, 34, 23];
+
+        function somar(a, b, c, d, e) {
+            let resultado = a + b + c + d + e
+            return resultado
+        }
+
+        let resul = somar(idades[0], idades[1], idades[2], idades[3], idades[4])
+
+        console.log(`A SOMA DAS IDADES É: ${resul} ANOS`)
+
+
+    </script>
+</body>
+</html>

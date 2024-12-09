@@ -63,10 +63,29 @@ if (idade >= 18) {
 
 //LAÇOS DE REPETIÇÃO//
 
+1º Exemplo:
+
 let lista = [10, 20, 30, 40, 50]
 
 for (let pos = 0; pos <= lista.indexOf(50); pos++) {
     console.log(pos)
+}
+
+
+2º Exemplo:
+
+let nome = "Marcela"
+
+switch (nome) {
+    case "Marco": //checar
+    console.log("Seu nome é Marco") //executar
+    break //encerrar
+    case "Marcela":
+    console.log("Seu nome é Marcela")
+    break
+    case "Ana":
+    console.log("Seu nome é Ana")
+    break
 }
 
 
@@ -86,6 +105,7 @@ let botao = document.querySelector("#botao");
 //Chama e define o evento que será disparado e define qual será a ação após o disparo do evendo, no caso rodar a função (avisar)
 botao.addEventListener("click", avisar)
 
+//botão.addEventListener("nome do evento", (função a ser executada))
 
 
 2º Exemplo
@@ -100,4 +120,95 @@ usdInput.addEventListener("keyup", () => {
 brlInput.addEventListener("keyup", () => {
     console.log(brlInput.value)
 })
+
+
+
+
+//ALGORITIMOS e LÓGICA DE PROGRAMAÇÃO//
+
+O QUE É UM ALGORITIMO? 
+OS PASSOS A SEREM SEGUIDOS PARA ALCANÇAR A RESOLUÇÃO DE UM DETERMINADO PROBLEMA.
+
+
+
+
+
+
+ALGORITIMO PARA SABER O VALOR DE SALÁRIO POR HORA:
+
+saber o salário mensal
+saber quantas horas foram trabalhadas no mês
+dividir o salario pelas horas
+
+
+
+ALGORITIMO PARA REALIZAR UMA LIGAÇÃO PARA UM AMIGO:
+
+PEGAR O CELULAR
+DISCAR O NÚMERO DO AMIGO
+REALIZAR A CHAMADA 
+COLOCAR NO OUVIDO 
+FALAR COM O AMIGO
+DESLIGAR A CHAMADA
+
+
+
+// 5 QS //
+
+- QUAIS OS DADOS DE ENTRADA?
+- O QUE FAZER COM ESTES DADOS?
+- QUAIS AS RESTRIÇÕES DO PROBLEMA?
+- QUAL O RESULTADO ESPERADO?
+- QUAIS OS PASSOS QUE DEVEM SER SEGUIDOS PARA CHEGAR AO RESULTADO ESPERADO?
+
+
+
+//ALGORITIMO USANDO PSEUDOCÓDIGO//
+
+
+OBJETIVO: O USUÁRIO DEVE CHUTAR UM NUMERO ATÉ QUE ACERTE O NUMERO ALEATÓRIO JÁ DEFINIDO.
+
+LET NUMERO = NUMERO PASSADO PELO USUARIO
+
+WHILE (NUMERO != NUMEROALEATORIO) {
+    PEDIR NOVAMENTE O NUMERO PARA O USUARIO
+
+    IF (NUMERO < NUMEROALEATORIO){
+        ALERT("NUMERO MENOR")
+    }ELSE IF (NUMERO > NUMEROALEATORIO){
+        ALERT("NUMERO MAIOR)
+    }ELSE{
+        ALERT("VOCE ACERTOU)
+    }
+}
+
+
+
+OBJETIVO: Imprimir o maior valor na tela.
+
+let numero1 = primeiro valor;
+let numero2 = segundo valor;
+
+if (numero1 > numero2) {
+    imprime o primeiro numero na tela
+}else{
+    imprime o segundo numero na tela
+}else{
+    console.log("é igual")
+}
+
+
+
+OBJETIVO: SOMAR OS DADOS DA LISTA
+
+let idades = [15, 46, 75, 34, 23];
+
+        function somar(a, b, c, d, e) {
+            let resultado = a + b + c + d + e
+            return resultado
+        }
+
+        let resul = somar(idades[0], idades[1], idades[2], idades[3], idades[4])
+
+        console.log(`A SOMA DAS IDADES É: ${resul} ANOS`)
 
